@@ -1,7 +1,11 @@
-// import Example from "./views/Example/Example.middleware";
+import Global from './global/global.middleware';
+import CakeDetail from '../ui/views/CakeDetail/CakeDetail.middleware';
+import CreateNewCake from '../ui/views/CreateNewCake/CreateNewCake.middleware';
 
 const middlewares = {
-//  ...Example,
+  ...Global,
+  ...CakeDetail,
+  ...CreateNewCake
 };
 
 export default (store, next, action) => {

@@ -31,3 +31,8 @@ body {
     @content;
   }
 }
+
+@import "../ui/components/custom/Cake/Cake.scss";
+@import "../ui/views/CakeList/CakeList.scss";
+@import "../ui/views/CakeDetail/CakeDetail.scss";
+@import "../ui/views/CreateNewCake/CreateNewCake.scss";

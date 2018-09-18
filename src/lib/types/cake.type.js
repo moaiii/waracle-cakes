@@ -1,0 +1,9 @@
+// @Flow
+
+export type Cake = {
+  id: number,
+  name: string,
+  comment: string,
+  imageUrl: string,
+  yumFactor: number
+};

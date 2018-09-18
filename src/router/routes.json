@@ -1,0 +1,14 @@
+[
+  {
+    "path": "/",
+    "viewComponent": "CakeList"
+  },
+  {
+    "path": "/cake",
+    "viewComponent": "Cake"
+  },
+  {
+    "path": "/create-new-cake",
+    "viewComponent": "CreateNewCake"
+  }
+]

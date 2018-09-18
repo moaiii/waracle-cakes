@@ -1,17 +1,24 @@
+import CreateNewCakeReducer from "../ui/views/CreateNewCake/CreateNewCake.reducer.js"
+import CakeDetailReducer from "../ui/views/CakeDetail/CakeDetail.reducer.js"
+import GlobalReducer from "../db/global/global.reducer";
 
 // redux
 import { createStore, applyMiddleware } from "redux";
 import { createLogger } from "redux-logger";
 import { combineReducers } from "redux"
 
-// middlewares
-// ...
+// middlewares./middleware.js
+import middlewareRouter from './middleware';
 
-const customMiddleWare = store => next => action => {}
+const customMiddleWare = store => next => action => {
+  middlewareRouter(store, next, action);
+}
 
 // Combine Reducers
 let reducers = combineReducers({
-
+  CreateNewCakeReducer,
+  CakeDetailReducer,
+  GlobalReducer
 });
 
 const logger = createLogger({

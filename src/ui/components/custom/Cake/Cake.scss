@@ -1,0 +1,40 @@
+@for $i from 1 through 1000 {
+  .Cake {
+    &:nth-of-type(#{$i}) {
+      transition-delay: #{$i / 10}s !important;
+    }
+  }
+}
+
+.Cake {
+  // mobile first < 425px
+  margin: 2rem auto;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  cursor: pointer;
+  
+  &.--animate {
+    opacity: 1;
+    transition: opacity 0.25s ease;
+  }
+
+  @media (min-width: 425px) {}
+
+  @media (min-width: 768px) {}
+
+  @media (min-width: 1024px) {}
+
+  @media (min-width: 1440px) {}
+}
+
+.Cake__img-container {
+  height: 200px;
+  width: 200px;
+  overflow: hidden;
+  border: 1px solid #ababab;
+  border-radius: 5px;
+
+  img {
+    width: 100%;
+  }
+}
