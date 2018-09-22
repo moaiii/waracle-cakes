@@ -21,6 +21,12 @@ To find my comments on the code enclosed, run find all on the string ` * Author 
 - run `npm run dev:qa` or `npm run dev:prod` to start the app process with different env configs 
 - both config files are the same in this example, I simply wanted to show proper architecture
 
+## THE APP
+- I have built the CRUD app to respond to network requests pending, complete and error status'.
+- You can view all, post new and delete cakes
+- I noticed an update cake endpoint however my interpretation of the tickets didnt suggest a need for this endpoint. If it was needed we could easily implement it into the `CakeDetail` view and update here in the same manner of handling the post new cakes and delete
+- I use a middleware messaging pattern to async call the server endpoints and then fire off serveral other actions to update the store and call ui status changes.
+
 ## The front end app is structured into the following main components
 
 ### DB
