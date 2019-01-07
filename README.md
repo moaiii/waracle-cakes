@@ -1,5 +1,9 @@
 # WARACLE TECHNICAL TEST - CAKES APP
 
+
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/moaiii/waracle-cakes.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/moaiii/waracle-cakes/alerts/)
+[![Total alerts](https://img.shields.io/lgtm/alerts/g/moaiii/waracle-cakes.svg?logo=lgtm&logoWidth=18)](https://lgtm.com/projects/g/moaiii/waracle-cakes/alerts/)
+
 ## LIVE LINK
 - `http://moaiii-waracle-cakes-app.s3-website-eu-west-1.amazonaws.com`
 
